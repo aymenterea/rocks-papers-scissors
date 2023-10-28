@@ -12,3 +12,12 @@ function getComputerChoice() {
     return choice;
 }
 
+let element;
+
+function playerSelection() {
+    element = prompt("Please choose either Rock, Paper, or Scissors:")
+    if (element.toLowerCase() === "rock" || element.toLowerCase() === "paper" || element.toLowerCase() === "scissors") {
+        element = element.charAt(0).toUpperCase + element.slice(1)
+    } else alert("Sorry, you can only pick one of the suggested options")
+}
+
